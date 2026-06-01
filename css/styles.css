@@ -91,8 +91,8 @@ ul li::before{
     background-size: cover;
     background-position: center;
     background-image: url("../img/square.png");
-    top:-10px;
-    left:1px;
+    top:-2px;
+    left:3px;
 }
 ul li.checked{
     color:#555;
@@ -101,4 +101,18 @@ ul li.checked{
 ul li.checked::before{
     color:#666;
     background-image: url("../img/checkmark.png");
+}
+.delete-btn{
+    position: absolute;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    right: 10px;
+    color:rgb(139, 139, 139);
+    border-radius: 50%;
+}
+.delete-btn:hover{
+    background-color: #d4d4e6;
+
 }
