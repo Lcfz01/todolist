@@ -13,7 +13,6 @@ $(document).ready(function(){
         alert('Enter a valid task!');
     }
 }
-
     saveTasks = function(){
         localStorage.setItem("data",listContainer.html());
     }
