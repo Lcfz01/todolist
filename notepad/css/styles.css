@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #ec47d6, #c02424);
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+#btn-add{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color:rgb(255, 254, 249);
+    background-color:rgb(37, 151, 37);
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#btn-add:hover{
+    background-color:rgba(0, 90, 0);
+}
+
+
+.note{
+    width: 300px;
+    background-color:#2c2c2c;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    resize: both;
+}
+
+.note:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.note .header .fa-palette{
+    color:rgb(156, 156, 156);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.note .header .fa-palette:hover{
+    color:rgb(44, 44, 44);
+}
+.note .header .icons{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.note .header .icons .fa-trash-can:hover{
+    color:rgb(44, 44, 44);
+}
+
+.note .header .icons .fa-floppy-disk:hover{
+    color:rgb(44, 44, 44);
+}
+
+.note .header{
+    color:rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color:#0f0f0f;
+}
+
+.note textarea{
+    width: 100%;
+    min-height: 220px;
+    border: none;
+    background-color: transparent;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+.note textarea:focus{
+    outline: none;
+}
+
+[draggable="true"]{
+    cursor: move;
+}
