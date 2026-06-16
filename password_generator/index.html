@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class ="container">
+        <h1>Password Generator</h1>
+        <div class="input-box">
+            <input type="text" id="passBox" class="passBox" disabled>
+            <span onclick="copy()"><i class="fa-regular fa-copy fa-lg"></i></span>
+        </div>
+        
+        <input type="range" min="10" max="30" value="10" id="inputSlider" oninput="changeValue()">
+
+        <div class="row">
+            <p>Password Length</p>
+            <span id="sliderValue">10</span>
+        </div>
+
+        <div class="row">
+            <label for="lowercase">Include Lowercase Letters (a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase" checked>
+        </div>
+
+        <div class="row">
+            <label for="uppercase">Include Uppercase Letters (A-Z)</label>
+            <input type="checkbox" name="uppercase" id="uppercase" checked>
+        </div>
+
+        <div class="row">
+            <label for="numbers">Include Numbers (0-9)</label>
+            <input type="checkbox" name="numbers" id="numbers" checked>
+        </div>
+
+        <div class="row">
+            <label for="symbols">Include Special Characters (!"#$%&/()=?¡[]_.,-@)</label>
+            <input type="checkbox" name="symbols" id="symbols" checked>
+        </div>
+        
+        <button onclick="setPassword()">Generate Password</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js" integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf4fb55ec5.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top,#c9cdf0,#d3d0f0);
+}
+
+.container{
+    box-sizing: border-box;
+    background-color: rgba(240, 248, 255, 0.856);
+    padding: 40px 20px 40px 20px;
+    box-shadow: 1px 5px 10px #000000;
+    max-width: 500px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container h1{
+    font: bold;
+    font-size: 24px;
+    margin-bottom: 36px;
+    color: #272727;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.passBox{
+    position: relative;
+    margin-bottom: 25px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #e7e7e7;
+    outline: none;
+}
+
+.fa-check{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-copy{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-copy:hover{
+    color: #818181;
+}
+
+input[type="range"]{
+    width: 100%;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.row p{
+    font-weight: 700;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: #3162cb;
+    cursor: border;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #122349;
+
+}
+
