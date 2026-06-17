@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Age calculator</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Age Calculator</h1>
+            <form id="ageCalculator" onsubmit="calculateAge(event)">
+                <div class="form-group">
+                    <label for="bDate">Enter your birthday:</label>
+                    <input type="date" id="bDate" name="bDate" placeholder="DD-MM-YYYY" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Calculate age</button>
+                </div>
+            </form>
+            <div class="result-container" id="result-container">
+                
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js" integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
